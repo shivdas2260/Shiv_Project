@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="3" failed="0" total="3" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="11487" started-at="2016-11-03T17:29:35Z" finished-at="2016-11-03T17:29:47Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="11487" started-at="2016-11-03T17:29:35Z" finished-at="2016-11-03T17:29:47Z">
+      <class name="spicejet_Helper_child_TestNG.Spicejet_booking">
+        <test-method status="FAIL" signature="beforeTest()[pri:0, instance:spicejet_Helper_child_TestNG.Spicejet_booking@7196b2]" name="beforeTest" is-config="true" duration-ms="0" started-at="2016-11-03T22:59:35Z" finished-at="2016-11-03T22:59:35Z">
+          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
+            <message>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:06:42'
+System info: host: 'WINCTRL-5EF13MV', ip: '192.168.1.3', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.7.0_10'
+Driver info: driver.version: ChromeDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:06:42'
+System info: host: 'WINCTRL-5EF13MV', ip: '192.168.1.3', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.7.0_10'
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:144)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:170)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:159)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:116)
+	at spicejet_Helper_child_TestNG.Spicejet_booking.beforeTest(Spicejet_booking.java:67)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
+Caused by: org.openqa.selenium.WebDriverException: java.net.SocketException: Connection reset
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:06:42'
+System info: host: 'WINCTRL-5EF13MV', ip: '192.168.1.3', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.7.0_10'
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:91)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+	... 29 more
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:139)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:155)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:284)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:140)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:261)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:165)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:167)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:272)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:124)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:271)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:144)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:90)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	... 30 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="SKIP" signature="Booking()[pri:0, instance:spicejet_Helper_child_TestNG.Spicejet_booking@7196b2]" name="Booking" duration-ms="1" started-at="2016-11-03T22:59:47Z" finished-at="2016-11-03T22:59:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Booking -->
+        <test-method status="SKIP" signature="Booking1()[pri:0, instance:spicejet_Helper_child_TestNG.Spicejet_booking@7196b2]" name="Booking1" duration-ms="1" started-at="2016-11-03T22:59:47Z" finished-at="2016-11-03T22:59:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Booking1 -->
+        <test-method status="SKIP" signature="booking2()[pri:0, instance:spicejet_Helper_child_TestNG.Spicejet_booking@7196b2]" name="booking2" duration-ms="1" started-at="2016-11-03T22:59:47Z" description="currency convertor" finished-at="2016-11-03T22:59:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- booking2 -->
+        <test-method status="SKIP" signature="afterTest()[pri:0, instance:spicejet_Helper_child_TestNG.Spicejet_booking@7196b2]" name="afterTest" is-config="true" duration-ms="0" started-at="2016-11-03T22:59:47Z" finished-at="2016-11-03T22:59:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- spicejet_Helper_child_TestNG.Spicejet_booking -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

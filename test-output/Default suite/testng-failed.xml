@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="spicejet_Helper_child_TestNG.Spicejet_booking">
+        <methods>
+          <include name="Booking"/>
+          <include name="Booking1"/>
+          <include name="beforeTest"/>
+          <include name="booking2"/>
+        </methods>
+      </class> <!-- spicejet_Helper_child_TestNG.Spicejet_booking -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
